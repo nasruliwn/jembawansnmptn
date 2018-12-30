@@ -20,6 +20,18 @@ gulp.task('vendor', function() {
     ])
     .pipe(gulp.dest('./vendor/jquery'))
 
+  // datatables.net-dt
+  gulp.src([
+      './node_modules/datatables.net-dt/**/*',
+      '!./node_modules/datatables.net-dt/*'
+    ])
+    .pipe(gulp.dest('./vendor/datatables.net-dt'))
+
+  // datatables.net
+  gulp.src([
+      './node_modules/datatables.net/js/*'
+    ])
+    .pipe(gulp.dest('./vendor/datatables.net'))
 })
 
 // Default task
