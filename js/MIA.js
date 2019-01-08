@@ -1,5 +1,5 @@
 
-const DATA_COLLECTED = 159;
+const DATA_COLLECTED = 193;
 const DATA_EXPECTED = 265;
 var dataPercentage = (DATA_COLLECTED/DATA_EXPECTED) * 100;
 
@@ -10,5 +10,5 @@ $(document).ready(function () {
 
     $('.progress-bar').css('width', dataPercentage + '%').attr('aria-valuenow', dataPercentage);
     $('.progress-bar').text(`Data terkumpul ${DATA_COLLECTED} dari ${DATA_EXPECTED}`);
-    $('#lastUpdate').text('Terakhir diupdate: Senin,  7 Jan 2019 13:12:51');
+    $('#lastUpdate').text('Terakhir diupdate: Selasa,  8 Jan 2019 09:14:28');
 });
