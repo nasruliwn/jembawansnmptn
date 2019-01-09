@@ -10,5 +10,5 @@ $(document).ready(function () {
 
     $('.progress-bar').css('width', dataPercentage + '%').attr('aria-valuenow', dataPercentage);
     $('.progress-bar').text(`Data terkumpul ${DATA_COLLECTED} dari ${DATA_EXPECTED}`);
-    $('#lastUpdate').text('Terakhir diupdate: Selasa,  8 Jan 2019 09:14:28');
+    $('#lastUpdate').text('Terakhir diupdate: Rabu,  9 Jan 2019 12:45:43');
 });
