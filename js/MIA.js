@@ -10,5 +10,5 @@ $(document).ready(function () {
 
     $('.progress-bar').css('width', dataPercentage + '%').attr('aria-valuenow', dataPercentage);
     $('.progress-bar').text(`Data terkumpul ${DATA_COLLECTED} dari ${DATA_EXPECTED}`);
-    $('#lastUpdate').text('Last checked: Thursday, 24 Jan 2019 14:07:06 (WIB)');
+    $('#lastUpdate').text('Last checked: Friday, 25 Jan 2019 14:11:16 (WIB)');
 });
