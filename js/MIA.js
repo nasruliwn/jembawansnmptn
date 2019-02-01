@@ -10,6 +10,6 @@ $(document).ready(function () {
 
     $('.progress-bar').css('width', dataPercentage + '%').attr('aria-valuenow', dataPercentage);
     $('.progress-bar').text(`Data terkumpul ${DATA_COLLECTED} dari ${DATA_EXPECTED}`);
-    $('#lastUpdate').text('Last checked: Thursday, 31 Jan 2019 14:12:46 (WIB)');
+    $('#lastUpdate').text('Last checked: Friday,  1 Feb 2019 14:11:06 (WIB)');
     $('#downloadURL').html('Data beserta nilai bisa diunduh di <a href="data/jathayu-mia-rank.csv">sini</a> (MIA)');
 });
