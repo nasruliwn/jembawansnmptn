@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Prediksi SNMPTN Jathayu">
+    <meta name="author" content="Jathayu">
+
+    <title>Jathayu - SNMPTN | Statistik</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- DataTables CSS -->
+    <link href="vendor/datatables.net-dt/css/jquery.dataTables.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Jathayu - SNMPTN</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">MIA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./iis.html">IIS</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Statistik
+                        <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1 class="mt-5">Statistik Pemetaan SNMPTN Jathayu 57</h1>
+                <p class="lead" id="lastUpdate"></p>
+                <br />
+                <h2>Jurusan: <b>MIA</b></h2>
+                <br />
+                <div id="miaChart" style="height: 2000px"></div>
+                <br />
+                <h2>Jurusan: <b>IIS</b></h2>
+                <div id="iisChart" style="height: 2000px"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- DataTables JavaScript -->
+    <script src="vendor/datatables.net-dt/js/dataTables.dataTables.min.js"></script>
+    <script src="vendor/datatables.net/jquery.dataTables.min.js"></script>
+    <!-- plotlyjs -->
+    <script src="vendor/plotly-latest.min.js"></script>
+
+    <!-- to load the last checked date -->
+    <script src="js/MIA.js"></script>
+
+    <script>
+    Plotly.d3.json('data/mia_stats.json', function (err, data) {
+        Plotly.newPlot(
+            'miaChart', [data],
+            {xaxis: {automargin: true}, yaxis:{automargin: true}});
+    });
+
+    Plotly.d3.json('data/iis_stats.json', function (err, data) {
+        Plotly.newPlot(
+            'iisChart', [data],
+            { xaxis: { automargin: true },
+              yaxis: { automargin: true } });
+    });
+    </script>
+</body>
+
+</html>
