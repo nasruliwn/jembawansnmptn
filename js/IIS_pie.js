@@ -6,11 +6,11 @@ google.charts.setOnLoadCallback(drawChart);
 function drawChart() {
   var data = google.visualization.arrayToDataTable([
   ['Status', 'Jumlah'],
-  ['Lolos', 2],
-  ['Lolos pilihan 1', 4],
+  ['Lolos', 1],
+  ['Lolos pilihan 1', 6],
   ['Lolos pilihan 2', 0],
-  ['Belum lolos', 10],
-  ['Tidak ada data', 13]
+  ['Belum lolos', 12],
+  ['Tidak ada data', 10]
 ]);
 
   // Optional; add a title and set the width and height of the chart
