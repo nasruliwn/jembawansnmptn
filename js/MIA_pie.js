@@ -9,8 +9,8 @@ function drawChart() {
   ['Lolos', 2],
   ['Lolos pilihan 1', 19],
   ['Lolos pilihan 2', 5],
-  ['Belum lolos', 43],
-  ['Tidak ada data', 37]
+  ['Belum lolos', 47],
+  ['Tidak ada data', 33]
 ]);
 
   // Optional; add a title and set the width and height of the chart
