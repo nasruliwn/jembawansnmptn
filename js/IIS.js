@@ -10,6 +10,6 @@ $(document).ready(function () {
 
     $('.progress-bar').css('width', dataPercentage + '%').attr('aria-valuenow', dataPercentage);
     $('.progress-bar').text(`Data terkumpul ${DATA_COLLECTED} dari ${DATA_EXPECTED}`);
-    $('#lastUpdate').text('Last checked: Sunday, 31 Mar 2019 14:38:26 (WIB)');
+    $('#lastUpdate').text('Last checked: Monday,  1 Apr 2019 14:38:50 (WIB)');
     $('#downloadURL').html('Data beserta nilai bisa diunduh di <a href="data/jathayu-iis-rank.csv">sini</a> (IIS)');
 });
